@@ -2,8 +2,8 @@
     "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v3.1/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
-            "Id": "Compound",
-            "Path": "../../Compound.json",
+            "Id": "Lisinopril",
+            "Path": "../../Lisinopril-Model.json",
             "BuildingBlocks": [],
             "SimulationParameters": []
         }
@@ -121,13 +121,43 @@
         },
         "AllPlots": [
             {
-                "Project": "Compound",
-                "Simulation": "Sim 1 - intravenous",
+                "Project": "Lisinopril",
+                "Simulation": "Beermann IV Bolus 10.56mg",
                 "SectionReference": "ct-profiles"
             },
             {
-                "Project": "Compound",
-                "Simulation": "Sim 2 - peroral",
+                "Project": "Lisinopril",
+                "Simulation": "Beermann IV Bolus 2.64mg",
+                "SectionReference": "ct-profiles"
+            },
+            {
+                "Project": "Lisinopril",
+                "Simulation": "Beermann IV Bolus 5.28mg",
+                "SectionReference": "ct-profiles"
+            },
+            {
+                "Project": "Lisinopril",
+                "Simulation": "Beermann PO repeated 20mg",
+                "SectionReference": "ct-profiles"
+            },
+            {
+                "Project": "Lisinopril",
+                "Simulation": "Gautam PO 5mg",
+                "SectionReference": "ct-profiles"
+            },
+            {
+                "Project": "Lisinopril",
+                "Simulation": "Mojaverian PO fasted 20mg",
+                "SectionReference": "ct-profiles"
+            },
+            {
+                "Project": "Lisinopril",
+                "Simulation": "Mojaverian PO fed 20mg",
+                "SectionReference": "ct-profiles"
+            },
+            {
+                "Project": "Lisinopril",
+                "Simulation": "Ulm PO 10mg",
                 "SectionReference": "ct-profiles"
             }
         ],
@@ -146,28 +176,76 @@
                 ],
                 "Groups": [
                     {
-                        "Caption": "Intravenous administration",
+                        "Caption": "Lisinopril Intravenous Administration (model building)",
                         "Symbol": "Circle",
                         "OutputMappings": [
                             {
-                                "Project": "Compound",
-                                "Simulation": "Sim 1 - intravenous",
-                                "Output": "Organism|PeripheralVenousBlood|COMPOUND|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Observed data iv",
-                                "Color": "#FF0000"
+                                "Project": "Lisinopril",
+                                "Simulation": "Beermann IV Bolus 10.56mg",
+                                "Output": "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Human (Swedish) IV Bolus 10",
+                                "Color": "#816B5E"
+                            },
+                            {
+                                "Project": "Lisinopril",
+                                "Simulation": "Beermann IV Bolus 5.28mg",
+                                "Output": "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Human (Swedish) IV Bolus 5.",
+                                "Color": "#816B5E"
+                            },
+                            {
+                                "Project": "Lisinopril",
+                                "Simulation": "Beermann IV Bolus 2.64mg",
+                                "Output": "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Human (Swedish) IV Bolus 2.",
+                                "Color": "#74A297"
                             }
                         ]
                     },
                     {
-                        "Caption": "Oral administration",
+                        "Caption": "Lisinopril Oral Administration (model building)",
                         "Symbol": "Square",
                         "OutputMappings": [
                             {
-                                "Project": "Compound",
-                                "Simulation": "Sim 2 - peroral",
-                                "Output": "Organism|PeripheralVenousBlood|COMPOUND|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Observed data po",
-                                "Color": "#FF0000"
+                                "Project": "Lisinopril",
+                                "Simulation": "Beermann PO repeated 20mg",
+                                "Output": "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Human (Swedish) PO Capsule ",
+                                "Color": "#816B5E"
+                            }
+                        ]
+                    },
+                    {
+                        "Caption": "Lisinopril Oral Administration (model verification)",
+                        "Symbol": "Triangle",
+                        "OutputMappings": [
+                            {
+                                "Project": "Lisinopril",
+                                "Simulation": "Gautam PO 5mg",
+                                "Output": "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Human (British) PO Tablet 5_1",
+                                "Color": "#816B5E"
+                            },
+                            {
+                                "Project": "Lisinopril",
+                                "Simulation": "Ulm PO 10mg",
+                                "Output": "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Human (Swiss) PO Capsule 10",
+                                "Color": "#E3DD8A"
+                            },
+                            {
+                                "Project": "Lisinopril",
+                                "Simulation": "Mojaverian PO fasted 20mg",
+                                "Output": "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Human (American) PO- 20 mg ",
+                                "Color": "#D737E6"
+                            },
+                            {
+                                "Project": "Lisinopril",
+                                "Simulation": "Mojaverian PO fed 20mg",
+                                "Output": "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Human (American) FED 20 mg",
+                                "Color": "#D8B290"
                             }
                         ]
                     }
@@ -180,15 +258,9 @@
     },
     "Inputs": [
         {
-            "Project": "Compound",
-            "Name": "COMPOUND",
+            "Project": "Lisinopril",
+            "Name": "Lisinopril",
             "Type": "Compound",
-            "SectionReference": "final-input-parameters"
-        },
-        {
-            "Project": "Compound",
-            "Name": "Tablet",
-            "Type": "Formulation",
             "SectionReference": "final-input-parameters"
         }
     ],

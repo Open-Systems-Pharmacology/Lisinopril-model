@@ -1,0 +1,3234 @@
+{
+  "Version": 79,
+  "Individuals": [
+    {
+      "Name": "Human",
+      "Seed": 11598500,
+      "OriginData": {
+        "CalculationMethods": [
+          "SurfaceAreaPlsInt_VAR1",
+          "Body surface area - Mosteller"
+        ],
+        "Species": "Human",
+        "Population": "European_ICRP_2002",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 30.0,
+          "Unit": "year(s)"
+        }
+      },
+      "ExpressionProfiles": []
+    },
+    {
+      "Name": "Swiss ulm",
+      "Seed": 272416796,
+      "OriginData": {
+        "CalculationMethods": [
+          "SurfaceAreaPlsInt_VAR1",
+          "Body surface area - Mosteller"
+        ],
+        "Species": "Human",
+        "Population": "European_ICRP_2002",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 30.0,
+          "Unit": "year(s)"
+        },
+        "Weight": {
+          "Value": 69.4,
+          "Unit": "kg"
+        }
+      },
+      "Parameters": [
+        {
+          "Path": "Organism|Lumen|Caecum|Effective surface area enhancement factor",
+          "Value": 0.1,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Organism|Lumen|ColonAscendens|Effective surface area enhancement factor",
+          "Value": 0.1,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Organism|Lumen|ColonDescendens|Effective surface area enhancement factor",
+          "Value": 0.1,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Organism|Lumen|ColonSigmoid|Effective surface area enhancement factor",
+          "Value": 0.1,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Organism|Lumen|ColonTransversum|Effective surface area enhancement factor",
+          "Value": 0.1,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Organism|Lumen|Rectum|Effective surface area enhancement factor",
+          "Value": 0.1,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "ExpressionProfiles": []
+    }
+  ],
+  "Compounds": [
+    {
+      "Name": "Lisinopril",
+      "IsSmallMolecule": true,
+      "PlasmaProteinBindingPartner": "Albumin",
+      "Lipophilicity": [
+        {
+          "Name": "Measurement",
+          "Parameters": [
+            {
+              "Name": "Lipophilicity",
+              "Value": -0.5781319594,
+              "Unit": "Log Units",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'Parameter Identification 4' on 2025-01-23 23:53"
+              }
+            }
+          ]
+        }
+      ],
+      "FractionUnbound": [
+        {
+          "Name": "Measurement",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "Fraction unbound (plasma, reference value)",
+              "Value": 1.0,
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'Parameter Identification 4' on 2025-01-23 23:53"
+              }
+            }
+          ]
+        }
+      ],
+      "Solubility": [
+        {
+          "Name": "Measurement",
+          "Parameters": [
+            {
+              "Name": "Solubility at reference pH",
+              "Value": 1000.0,
+              "Unit": "mg/l"
+            },
+            {
+              "Name": "Reference pH",
+              "Value": 7.2
+            }
+          ]
+        }
+      ],
+      "PkaTypes": [
+        {
+          "Type": "Acid",
+          "Pka": 1.63,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Type": "Base",
+          "Pka": 10.75,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "Processes": [
+        {
+          "InternalName": "KidneyClearance",
+          "DataSource": "Renal Clearance",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "Fraction unbound (experiment)",
+              "Value": 1.0
+            },
+            {
+              "Name": "Plasma clearance",
+              "Value": 1.18,
+              "Unit": "ml/min/kg",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'Parameter Identification 4' on 2025-01-23 23:53"
+              }
+            }
+          ]
+        }
+      ],
+      "CalculationMethods": [
+        "Cellular partition coefficient method - Schmitt",
+        "Cellular permeability - Charge dependent Schmitt"
+      ],
+      "Parameters": [
+        {
+          "Name": "Molecular weight",
+          "Value": 405.5,
+          "Unit": "g/mol"
+        }
+      ]
+    }
+  ],
+  "Formulations": [
+    {
+      "Name": "Tablet",
+      "FormulationType": "Formulation_Particles",
+      "Parameters": [
+        {
+          "Name": "Thickness (unstirred water layer)",
+          "Value": 30.0,
+          "Unit": "µm"
+        },
+        {
+          "Name": "Type of particle size distribution",
+          "Value": 0.0
+        },
+        {
+          "Name": "Particle radius (mean)",
+          "Value": 12.5,
+          "Unit": "µm"
+        }
+      ]
+    },
+    {
+      "Name": "dissolved",
+      "FormulationType": "Formulation_Dissolved"
+    },
+    {
+      "Name": "Weibul dissolution",
+      "FormulationType": "Formulation_Tablet_Weibull",
+      "Parameters": [
+        {
+          "Name": "Dissolution time (50% dissolved)",
+          "Value": 120.0,
+          "Unit": "min",
+          "ValueOrigin": {
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'Parameter Identification 5' on 2025-02-03 14:16"
+          }
+        },
+        {
+          "Name": "Lag time",
+          "Value": 0.0,
+          "Unit": "min"
+        },
+        {
+          "Name": "Dissolution shape",
+          "Value": 3.0,
+          "ValueOrigin": {
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'Parameter Identification 5' on 2025-02-03 14:16"
+          }
+        },
+        {
+          "Name": "Use as suspension",
+          "Value": 1.0
+        }
+      ]
+    }
+  ],
+  "Protocols": [
+    {
+      "Name": "Bolus 2.64",
+      "ApplicationType": "IntravenousBolus",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 2.64,
+          "Unit": "mg"
+        }
+      ]
+    },
+    {
+      "Name": "Bolus 5.28",
+      "ApplicationType": "IntravenousBolus",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 5.28,
+          "Unit": "mg"
+        }
+      ]
+    },
+    {
+      "Name": "Bolus 10.56",
+      "ApplicationType": "IntravenousBolus",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 10.56,
+          "Unit": "mg"
+        }
+      ]
+    },
+    {
+      "Name": "Americal PO tablet 20 mg",
+      "ApplicationType": "Oral",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 20.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        }
+      ]
+    },
+    {
+      "Name": "IR tablet 10 days",
+      "ApplicationType": "Oral",
+      "DosingInterval": "DI_24",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 20.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Name": "End time",
+          "Value": 239.0,
+          "Unit": "h",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "British 5mg tablet",
+      "ApplicationType": "Oral",
+      "DosingInterval": "DI_24",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 5.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Name": "End time",
+          "Value": 148.0,
+          "Unit": "h",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "swiss PO 10 mg",
+      "ApplicationType": "Oral",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 10.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        }
+      ]
+    }
+  ],
+  "Events": [
+    {
+      "Name": "meal",
+      "Template": "Meal: Standard (Human)",
+      "Parameters": [
+        {
+          "Name": "Meal energy content",
+          "Value": 524.0,
+          "Unit": "kcal",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ]
+    }
+  ],
+  "Simulations": [
+    {
+      "Name": "Beermann IV Bolus 2.64mg",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Human (Swedish) IV Bolus 2."
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 100.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Lisinopril|Intestinal permeability (transcellular)",
+          "Value": 1.35E-08,
+          "Unit": "cm/s",
+          "ValueOrigin": {
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'Parameter Identification 4' on 2025-01-23 23:53"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Human",
+      "Compounds": [
+        {
+          "Name": "Lisinopril",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Processes": [
+            {
+              "Name": "Renal Clearances-Renal Clearance",
+              "SystemicProcessType": "Renal"
+            }
+          ],
+          "Protocol": {
+            "Name": "Bolus 2.64"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Lisinopril-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Beermann IV Bolus 2.64mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Human (Swedish) IV Bolus 2.-Lisinopril-Measurement",
+              "X": "Human (Swedish) IV Bolus 2.|Time",
+              "Y": "Human (Swedish) IV Bolus 2.|ObservedData|||Lisinopril|Measurement",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "lisinopril_v2\nBolus 2.64\n2025-02-16 16:27"
+        }
+      ]
+    },
+    {
+      "Name": "Beermann IV Bolus 5.28mg",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Human (Swedish) IV Bolus 5."
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 100.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Lisinopril|Intestinal permeability (transcellular)",
+          "Value": 1.35E-08,
+          "Unit": "cm/s",
+          "ValueOrigin": {
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'Parameter Identification 4' on 2025-01-23 23:53"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Human",
+      "Compounds": [
+        {
+          "Name": "Lisinopril",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Processes": [
+            {
+              "Name": "Renal Clearances-Renal Clearance",
+              "SystemicProcessType": "Renal"
+            }
+          ],
+          "Protocol": {
+            "Name": "Bolus 5.28"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Lisinopril-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Beermann IV Bolus 5.28mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Human (Swedish) IV Bolus 5.-Lisinopril-Measurement",
+              "X": "Human (Swedish) IV Bolus 5.|Time",
+              "Y": "Human (Swedish) IV Bolus 5.|ObservedData|||Lisinopril|Measurement",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "lisinopril_v2\nBolus 5.28\n2025-02-16 16:27"
+        }
+      ]
+    },
+    {
+      "Name": "Beermann IV Bolus 10.56mg",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Human (Swedish) IV Bolus 10"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 100.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Lisinopril|Intestinal permeability (transcellular)",
+          "Value": 1.35E-08,
+          "Unit": "cm/s",
+          "ValueOrigin": {
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'Parameter Identification 4' on 2025-01-23 23:53"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Human",
+      "Compounds": [
+        {
+          "Name": "Lisinopril",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Processes": [
+            {
+              "Name": "Renal Clearances-Renal Clearance",
+              "SystemicProcessType": "Renal"
+            }
+          ],
+          "Protocol": {
+            "Name": "Bolus 10.56"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Lisinopril-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Beermann IV Bolus 10.56mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Human (Swedish) IV Bolus 10-Lisinopril-Measurement",
+              "X": "Human (Swedish) IV Bolus 10|Time",
+              "Y": "Human (Swedish) IV Bolus 10|ObservedData|||Lisinopril|Measurement",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "lisinopril_v2\nBolus 10.56\n2025-02-16 16:27"
+        }
+      ]
+    },
+    {
+      "Name": "Beermann PO repeated 20mg",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Human (Swedish) PO Capsule "
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 350.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Lisinopril|Intestinal permeability (transcellular)",
+          "Value": 1.35E-08,
+          "Unit": "cm/s",
+          "ValueOrigin": {
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'Parameter Identification 5' on 2025-02-03 14:16"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+        "Organism|Lumen|Lisinopril|Fraction of oral drug mass absorbed into mucosa"
+      ],
+      "Individual": "Human",
+      "Compounds": [
+        {
+          "Name": "Lisinopril",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Processes": [
+            {
+              "Name": "Renal Clearances-Renal Clearance",
+              "SystemicProcessType": "Renal"
+            }
+          ],
+          "Protocol": {
+            "Name": "IR tablet 10 days",
+            "Formulations": [
+              {
+                "Name": "Weibul dissolution",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": -16.0016,
+              "Max": 320.30542,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.00115602906,
+              "Max": 0.123022452,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "Min": -0.07934115,
+              "Max": -0.04970428,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Lisinopril-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Beermann PO repeated 20mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Human (Swedish) PO Capsule -Lisinopril-Measurement",
+              "X": "Human (Swedish) PO Capsule |Time",
+              "Y": "Human (Swedish) PO Capsule |ObservedData|||Lisinopril|Measurement",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Lisinopril-Lumen-Fraction of oral drug mass absorbed into mucosa",
+              "X": "Time",
+              "Y": "Beermann PO repeated 20mg|Organism|Lumen|Lisinopril|Fraction of oral drug mass absorbed into mucosa",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Visible": false,
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "Dash"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "Bottom",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "lisinopril_vf\nBeermann PO repeated 20mg\n2025-02-21 10:47"
+        }
+      ]
+    },
+    {
+      "Name": "Gautam PO 5mg",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Human (British) PO Tablet 5_1",
+        "Human (British) PO Tablet 5_2"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 250.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Lisinopril|Intestinal permeability (transcellular)",
+          "Value": 1.35E-08,
+          "Unit": "cm/s",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 7.375655398E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 7.375655398E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 7.375655398E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 7.375655398E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 7.375655398E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Human",
+      "Compounds": [
+        {
+          "Name": "Lisinopril",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Processes": [
+            {
+              "Name": "Renal Clearances-Renal Clearance",
+              "SystemicProcessType": "Renal"
+            }
+          ],
+          "Protocol": {
+            "Name": "British 5mg tablet",
+            "Formulations": [
+              {
+                "Name": "Weibul dissolution",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": -15.04639,
+              "Max": 193.9914,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.003586752,
+              "Max": 0.100048,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Lisinopril-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Gautam PO 5mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Human (British) PO Tablet 5_1-Lisinopril-Measurement",
+              "X": "Human (British) PO Tablet 5_1|Time",
+              "Y": "Human (British) PO Tablet 5_1|ObservedData|||Lisinopril|Measurement",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Human (British) PO Tablet 5_2-Lisinopril-Measurement",
+              "X": "Human (British) PO Tablet 5_2|Time",
+              "Y": "Human (British) PO Tablet 5_2|ObservedData|||Lisinopril|Measurement",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Lisinopril-Model2\nGautam PO 5mg\n2025-02-28 15:12"
+        }
+      ]
+    },
+    {
+      "Name": "Mojaverian PO fasted 20mg",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Human (American) PO- 20 mg "
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 120.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Americal PO tablet 20 mg|Weibul dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Lisinopril|Intestinal permeability (transcellular)",
+          "Value": 1.35E-08,
+          "Unit": "cm/s",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Human",
+      "Compounds": [
+        {
+          "Name": "Lisinopril",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Processes": [
+            {
+              "Name": "Renal Clearances-Renal Clearance",
+              "SystemicProcessType": "Renal"
+            }
+          ],
+          "Protocol": {
+            "Name": "Americal PO tablet 20 mg",
+            "Formulations": [
+              {
+                "Name": "Weibul dissolution",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": -3.091548,
+              "Max": 121.4674,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0001078317,
+              "Max": 0.6038837,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Lisinopril-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mojaverian PO fasted 20mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Human (American) PO- 20 mg -Lisinopril-Measurement",
+              "X": "Human (American) PO- 20 mg |Time",
+              "Y": "Human (American) PO- 20 mg |ObservedData|||Lisinopril|Measurement",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Lisinopril-Model2\nMojaverian PO fasted 20mg\n2025-02-28 15:11"
+        }
+      ]
+    },
+    {
+      "Name": "Mojaverian PO fed 20mg",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Human (American) FED 20 mg"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 120.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Americal PO tablet 20 mg|Weibul dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Lisinopril|Intestinal permeability (transcellular)",
+          "Value": 1.35E-08,
+          "Unit": "cm/s",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Human",
+      "Compounds": [
+        {
+          "Name": "Lisinopril",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Processes": [
+            {
+              "Name": "Renal Clearances-Renal Clearance",
+              "SystemicProcessType": "Renal"
+            }
+          ],
+          "Protocol": {
+            "Name": "Americal PO tablet 20 mg",
+            "Formulations": [
+              {
+                "Name": "Weibul dissolution",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "Events": [
+        {
+          "Name": "meal",
+          "StartTime": {
+            "Value": 0.0,
+            "Unit": "h"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": -2.389235,
+              "Max": 122.2255,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 2.639572E-05,
+              "Max": 0.3184239,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Lisinopril-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mojaverian PO fed 20mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Human (American) FED 20 mg-Lisinopril-Measurement",
+              "X": "Human (American) FED 20 mg|Time",
+              "Y": "Human (American) FED 20 mg|ObservedData|||Lisinopril|Measurement",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Lisinopril-Model2\nMojaverian PO fed 20mg\n2025-02-28 15:13"
+        }
+      ]
+    },
+    {
+      "Name": "Ulm PO 10mg",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Human (Swiss) PO Capsule 10"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 100.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|swiss PO 10 mg|Weibul dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Lisinopril|Intestinal permeability (transcellular)",
+          "Value": 1.35E-08,
+          "Unit": "cm/s",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 3E-09,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Lisinopril|P (interstitial->intracellular)",
+          "Value": 4.9582078657E-05,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Lisinopril|P (intracellular->interstitial)",
+          "Value": 8.1132209378E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Human",
+      "Compounds": [
+        {
+          "Name": "Lisinopril",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Processes": [
+            {
+              "Name": "Renal Clearances-Renal Clearance",
+              "SystemicProcessType": "Renal"
+            }
+          ],
+          "Protocol": {
+            "Name": "swiss PO 10 mg",
+            "Formulations": [
+              {
+                "Name": "Weibul dissolution",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 1.401298E-45,
+              "Max": 102.8168,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0008360452,
+              "Max": 0.102462,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Lisinopril-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Ulm PO 10mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Human (Swiss) PO Capsule 10-Lisinopril-Measurement",
+              "X": "Human (Swiss) PO Capsule 10|Time",
+              "Y": "Human (Swiss) PO Capsule 10|ObservedData|||Lisinopril|Measurement",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Lisinopril-Model2\nUlm PO 10mg\n2025-02-28 15:13"
+        }
+      ]
+    }
+  ],
+  "ObservedData": [
+    {
+      "Name": "Human (American) PO- 20 mg ",
+      "ExtendedProperties": [
+        {
+          "Name": "Sheet",
+          "Value": "Human (American) PO- 20 mg ",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "20",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Lisinopril",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Path": "Human (American) PO- 20 mg |ObservedData|||Lisinopril|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 405.5
+          },
+          "Values": [
+            0.0037759,
+            0.0274820011,
+            0.0517603979,
+            0.0635645,
+            0.082175,
+            0.0774109,
+            0.0487849,
+            0.0323646,
+            0.0152527,
+            0.00585579965,
+            0.0026001,
+            0.001325,
+            0.0009109,
+            0.0006649
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Human (American) PO- 20 mg |Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          8.0,
+          12.0,
+          16.0,
+          24.0,
+          36.0,
+          48.0,
+          72.0,
+          96.0,
+          120.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Human (British) PO Tablet 5_1",
+      "ExtendedProperties": [
+        {
+          "Name": "Sheet",
+          "Value": "Human (British) PO Tablet 5_1",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "5",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Lisinopril",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Path": "Human (British) PO Tablet 5_1|ObservedData|||Lisinopril|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 405.5
+          },
+          "Values": [
+            0.0024159,
+            0.0137692,
+            0.0176526,
+            0.0180236,
+            0.0042182,
+            0.00356019987,
+            0.0079946,
+            0.013014,
+            0.0201244,
+            0.0297237,
+            0.0265779011,
+            0.0057389
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Human (British) PO Tablet 5_1|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          24.0,
+          144.0,
+          145.0,
+          146.0,
+          148.0,
+          150.0,
+          152.0,
+          168.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Human (British) PO Tablet 5_2",
+      "ExtendedProperties": [
+        {
+          "Name": "Sheet",
+          "Value": "Human (British) PO Tablet 5_2",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "5",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Lisinopril",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Path": "Human (British) PO Tablet 5_2|ObservedData|||Lisinopril|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 405.5
+          },
+          "Values": [
+            0.00356019987,
+            0.0079946,
+            0.013014,
+            0.0201244,
+            0.0297237,
+            0.0265779011,
+            0.0057389
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Human (British) PO Tablet 5_2|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.0,
+          1.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          24.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Human (Swedish) IV Bolus 10",
+      "ExtendedProperties": [
+        {
+          "Name": "Sheet",
+          "Value": "Human (Swedish) IV Bolus 10",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "10.56",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Lisinopril",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Path": "Human (Swedish) IV Bolus 10|ObservedData|||Lisinopril|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 405.5
+          },
+          "Values": [
+            0.908166,
+            0.721319,
+            0.615198,
+            0.449375,
+            0.34373,
+            0.264036,
+            0.110038005,
+            0.0511449,
+            0.026618,
+            0.0118700005,
+            0.0026348,
+            0.001753,
+            0.00136769994,
+            0.0012669,
+            0.0009885
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Human (Swedish) IV Bolus 10|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.166699991,
+          0.3333,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          12.0,
+          24.0,
+          36.0,
+          48.0,
+          60.0,
+          72.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Human (Swedish) IV Bolus 2.",
+      "ExtendedProperties": [
+        {
+          "Name": "Sheet",
+          "Value": "Human (Swedish) IV Bolus 2.",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "2.64",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Lisinopril",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Path": "Human (Swedish) IV Bolus 2.|ObservedData|||Lisinopril|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 405.5
+          },
+          "Values": [
+            0.297958,
+            0.213126,
+            0.175788,
+            0.121588,
+            0.0965758041,
+            0.0741831,
+            0.0343331024,
+            0.0156917,
+            0.0104566,
+            0.0051567,
+            0.0018687,
+            0.0013749,
+            0.00115660008,
+            0.0009812,
+            0.0008118
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Human (Swedish) IV Bolus 2.|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.166699991,
+          0.3333,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          12.0,
+          24.0,
+          36.0,
+          48.0,
+          60.0,
+          72.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Human (Swedish) IV Bolus 5.",
+      "ExtendedProperties": [
+        {
+          "Name": "Sheet",
+          "Value": "Human (Swedish) IV Bolus 5.",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "5.28",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Lisinopril",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Path": "Human (Swedish) IV Bolus 5.|ObservedData|||Lisinopril|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 405.5
+          },
+          "Values": [
+            0.438108,
+            0.343637,
+            0.299291,
+            0.223231,
+            0.180306,
+            0.126839,
+            0.0622458048,
+            0.029542299,
+            0.013904,
+            0.0054912,
+            0.0021459,
+            0.001559,
+            0.0012265,
+            0.0010362,
+            0.0010704
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Human (Swedish) IV Bolus 5.|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.166699991,
+          0.3333,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          12.0,
+          24.0,
+          36.0,
+          48.0,
+          60.0,
+          72.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Human (Swedish) PO Capsule ",
+      "ExtendedProperties": [
+        {
+          "Name": "Sheet",
+          "Value": "Human (Swedish) PO Capsule ",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "20",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Lisinopril",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Path": "Human (Swedish) PO Capsule |ObservedData|||Lisinopril|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 405.5
+          },
+          "Values": [
+            0.0018481,
+            0.0130826,
+            0.0328235,
+            0.0456648022,
+            0.0565793,
+            0.0540152,
+            0.0354063,
+            0.0102306,
+            0.0109129,
+            0.0123974,
+            0.0113138,
+            0.011033,
+            0.0113940006,
+            0.0112740006,
+            0.0130797,
+            0.011033,
+            0.0123187,
+            0.0185781009,
+            0.0436142,
+            0.062232,
+            0.074752,
+            0.0776432,
+            0.0672146,
+            0.0420264,
+            0.0147644,
+            0.0041366,
+            0.0033898,
+            0.0024084,
+            0.001996,
+            0.00148909993
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Human (Swedish) PO Capsule |Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          8.0,
+          12.0,
+          24.0,
+          48.0,
+          72.0,
+          96.0,
+          120.0,
+          144.0,
+          168.0,
+          192.0,
+          216.0,
+          216.5,
+          217.0,
+          218.0,
+          219.0,
+          220.0,
+          222.0,
+          224.0,
+          228.0,
+          240.0,
+          252.0,
+          264.0,
+          276.0,
+          288.0,
+          312.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Human (Swiss) PO Capsule 10",
+      "ExtendedProperties": [
+        {
+          "Name": "Sheet",
+          "Value": "Human (Swiss) PO Capsule 10",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "10",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Lisinopril",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Path": "Human (Swiss) PO Capsule 10|ObservedData|||Lisinopril|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 405.5
+          },
+          "Values": [
+            0.00235930015,
+            0.0043627,
+            0.00766130025,
+            0.0180284,
+            0.0247441,
+            0.0373511,
+            0.0348825,
+            0.0313593,
+            0.008185799,
+            0.0023553,
+            0.000882599968,
+            0.0008242
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Human (Swiss) PO Capsule 10|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          1.4916,
+          1.948,
+          2.28659987,
+          3.3016,
+          4.2088,
+          6.025,
+          7.9868,
+          12.1378994,
+          24.0409985,
+          47.8801,
+          71.7104,
+          95.8832
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Human (American) FED 20 mg",
+      "ExtendedProperties": [
+        {
+          "Name": "Sheet",
+          "Value": "Human (American) FED 20 mg",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "20",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Lisinopril",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Path": "Human (American) FED 20 mg|ObservedData|||Lisinopril|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 405.5
+          },
+          "Values": [
+            0.00180898164,
+            0.0152190207,
+            0.03475273,
+            0.0491832942,
+            0.0696130544,
+            0.0620089732,
+            0.0405745171,
+            0.0261426624,
+            0.0123735368,
+            0.005258179,
+            0.002322411,
+            0.00141951838,
+            0.0009892661,
+            0.000711023
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Human (American) FED 20 mg|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          2.0,
+          2.5,
+          3.4,
+          4.5,
+          7.0,
+          8.0,
+          12.0,
+          16.0,
+          24.0,
+          36.0,
+          48.0,
+          72.0,
+          96.0,
+          120.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    }
+  ],
+  "SimulationClassifications": [
+    {
+      "Name": "weibul",
+      "Classifiables": [
+        "Beermann PO repeated 20mg",
+        "Gautam PO 5mg",
+        "Mojaverian PO fasted 20mg",
+        "Mojaverian PO fed 20mg",
+        "Ulm PO 10mg"
+      ]
+    },
+    {
+      "Name": "Bolus",
+      "Classifiables": [
+        "Beermann IV Bolus 2.64mg",
+        "Beermann IV Bolus 5.28mg",
+        "Beermann IV Bolus 10.56mg"
+      ]
+    }
+  ]
+}
