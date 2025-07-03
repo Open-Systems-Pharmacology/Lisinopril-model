@@ -26,8 +26,8 @@ This is the result of the final parameter identification.
 | `lipophilicity` |          -0.58       |   Log Units   |
 | `Plasma Clearance` |        1.18         |      |ml/min/kg
 | `Intestinal permeability` |     1.35E-8            | cm/s     |
-| `Weibul Dissolution time` |        120         |  min    |
-| `Weibul Dissolution shape` |        3.00         |   -   |
+| `Weibull Dissolution time` |        120         |  min    |
+| `Weibull Dissolution shape` |        3.00         |   -   |
 | `Permeability P(intracellular->interstitial) Mucosa (large intestine)` |        8.1132E-6         |   cm/min   |
 | `Permeability P(intracellular->interstitial) Mucosa (small intestine)`  |        3E-09         |   cm/min   |
 
