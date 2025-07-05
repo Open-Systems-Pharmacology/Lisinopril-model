@@ -1,5 +1,5 @@
 {
-  "Version": 79,
+  "Version": 80,
   "Individuals": [
     {
       "Name": "Human",
@@ -219,7 +219,7 @@
       "FormulationType": "Formulation_Dissolved"
     },
     {
-      "Name": "Weibul dissolution",
+      "Name": "Weibull dissolution",
       "FormulationType": "Formulation_Tablet_Weibull",
       "Parameters": [
         {
@@ -944,52 +944,52 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|IR tablet 10 days|Weibull dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|IR tablet 10 days|Weibull dissolution|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|IR tablet 10 days|Weibull dissolution|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|IR tablet 10 days|Weibull dissolution|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|IR tablet 10 days|Weibull dissolution|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|IR tablet 10 days|Weibull dissolution|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|IR tablet 10 days|Weibull dissolution|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|IR tablet 10 days|Weibull dissolution|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|IR tablet 10 days|Weibull dissolution|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|IR tablet 10 days|Weibul dissolution|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|IR tablet 10 days|Weibull dissolution|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -1202,7 +1202,7 @@
             "Name": "IR tablet 10 days",
             "Formulations": [
               {
-                "Name": "Weibul dissolution",
+                "Name": "Weibull dissolution",
                 "Key": "Formulation"
               }
             ]
@@ -1362,37 +1362,37 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|British 5mg tablet|Weibull dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|British 5mg tablet|Weibull dissolution|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|British 5mg tablet|Weibull dissolution|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|British 5mg tablet|Weibull dissolution|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|British 5mg tablet|Weibull dissolution|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|British 5mg tablet|Weibull dissolution|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|British 5mg tablet|Weibul dissolution|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|British 5mg tablet|Weibull dissolution|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -1514,7 +1514,7 @@
             "Name": "British 5mg tablet",
             "Formulations": [
               {
-                "Name": "Weibul dissolution",
+                "Name": "Weibull dissolution",
                 "Key": "Formulation"
               }
             ]
@@ -1659,7 +1659,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|Americal PO tablet 20 mg|Weibul dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|Americal PO tablet 20 mg|Weibull dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -1781,7 +1781,7 @@
             "Name": "Americal PO tablet 20 mg",
             "Formulations": [
               {
-                "Name": "Weibul dissolution",
+                "Name": "Weibull dissolution",
                 "Key": "Formulation"
               }
             ]
@@ -1915,7 +1915,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|Americal PO tablet 20 mg|Weibul dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|Americal PO tablet 20 mg|Weibull dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -2037,7 +2037,7 @@
             "Name": "Americal PO tablet 20 mg",
             "Formulations": [
               {
-                "Name": "Weibul dissolution",
+                "Name": "Weibull dissolution",
                 "Key": "Formulation"
               }
             ]
@@ -2180,7 +2180,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|swiss PO 10 mg|Weibul dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|swiss PO 10 mg|Weibull dissolution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -2390,7 +2390,7 @@
             "Name": "swiss PO 10 mg",
             "Formulations": [
               {
-                "Name": "Weibul dissolution",
+                "Name": "Weibull dissolution",
                 "Key": "Formulation"
               }
             ]
@@ -3213,7 +3213,7 @@
   ],
   "SimulationClassifications": [
     {
-      "Name": "weibul",
+      "Name": "weibull",
       "Classifiables": [
         "Beermann PO repeated 20mg",
         "Gautam PO 5mg",
