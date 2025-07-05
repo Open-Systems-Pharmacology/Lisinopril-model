@@ -492,6 +492,13 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Beermann IV Bolus 2.64mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Human (Swedish) IV Bolus 2."
+        }
+      ],
       "Individual": "Human",
       "Compounds": [
         {
@@ -647,6 +654,13 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Beermann IV Bolus 5.28mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Human (Swedish) IV Bolus 5."
+        }
+      ],
       "Individual": "Human",
       "Compounds": [
         {
@@ -801,6 +815,13 @@
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Beermann IV Bolus 10.56mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Human (Swedish) IV Bolus 10"
+        }
       ],
       "Individual": "Human",
       "Compounds": [
@@ -1184,6 +1205,13 @@
         "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
         "Organism|Lumen|Lisinopril|Fraction of oral drug mass absorbed into mucosa"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Beermann PO repeated 20mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Human (Swedish) PO Capsule "
+        }
+      ],
       "Individual": "Human",
       "Compounds": [
         {
@@ -1496,6 +1524,18 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Gautam PO 5mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Human (British) PO Tablet 5_1"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Gautam PO 5mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Human (British) PO Tablet 5_2"
+        }
+      ],
       "Individual": "Human",
       "Compounds": [
         {
@@ -1763,6 +1803,13 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Mojaverian PO fasted 20mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Human (American) PO- 20 mg "
+        }
+      ],
       "Individual": "Human",
       "Compounds": [
         {
@@ -2018,6 +2065,13 @@
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Mojaverian PO fed 20mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Human (American) FED 20 mg"
+        }
       ],
       "Individual": "Human",
       "Compounds": [
@@ -2371,6 +2425,13 @@
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Ulm PO 10mg|Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Human (Swiss) PO Capsule 10"
+        }
       ],
       "Individual": "Human",
       "Compounds": [
