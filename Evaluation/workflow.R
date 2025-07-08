@@ -60,8 +60,8 @@ createQualificationReport <- function(qualificationRunnerFolder,
   #' `workingDirectory`: current directory is used as default working directory
   workingDirectory <- getwd()
   
-  qualificationPlanName <- "qualification_plan.json"
-  qualificationPlanFile <- file.path(workingDirectory, "input", qualificationPlanName)
+  qualificationPlanName <- "evaluation_plan.json"
+  qualificationPlanFile <- file.path(workingDirectory, "Input", qualificationPlanName)
   
   #' The default outputs of qualification runner should be generated under `<workingDirectory>/re_input`
   reInputFolder <- file.path(workingDirectory, "re_input")

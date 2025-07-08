@@ -585,6 +585,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Lisinopril - IV, Beermann Bolus 2.24mg",
           "OriginText": "lisinopril_v2\nBolus 2.64\n2025-02-16 16:27"
         }
       ]
@@ -747,6 +748,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Lisinopril - IV, Beermann Bolus 5.28mg",
           "OriginText": "lisinopril_v2\nBolus 5.28\n2025-02-16 16:27"
         }
       ]
@@ -909,6 +911,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Lisinopril - IV, Beermann Bolus 10.56mg",
           "OriginText": "lisinopril_v2\nBolus 10.56\n2025-02-16 16:27"
         }
       ]
@@ -1333,6 +1336,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Lisinopril - PO, Beermann repeated 20mg",
           "OriginText": "lisinopril_vf\nBeermann PO repeated 20mg\n2025-02-21 10:47"
         }
       ]
@@ -1643,6 +1647,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Lisinopril - PO, Gautam 5mg",
           "OriginText": "Lisinopril-Model2\nGautam PO 5mg\n2025-02-28 15:12"
         }
       ]
@@ -1906,6 +1911,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Lisinopril - PO, Mojaverian fasted 20mg",
           "OriginText": "Lisinopril-Model2\nMojaverian PO fasted 20mg\n2025-02-28 15:11"
         }
       ]
@@ -2178,6 +2184,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Lisinopril - PO, Mojaverian fed 20mg",
           "OriginText": "Lisinopril-Model2\nMojaverian PO fed 20mg\n2025-02-28 15:13"
         }
       ]
@@ -2529,6 +2536,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
+          "Title": "Lisinopril - PO, Ulm fed 10mg",
           "OriginText": "Lisinopril-Model2\nUlm PO 10mg\n2025-02-28 15:13"
         }
       ]
