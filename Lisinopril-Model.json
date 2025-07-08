@@ -115,12 +115,7 @@
           "Parameters": [
             {
               "Name": "Fraction unbound (plasma, reference value)",
-              "Value": 1.0,
-              "ValueOrigin": {
-                "Source": "ParameterIdentification",
-                "Method": "ParameterIdentification",
-                "Description": "Value updated from 'Parameter Identification 4' on 2025-01-23 23:53"
-              }
+              "Value": 1.0
             }
           ]
         }
@@ -1205,8 +1200,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)",
-        "Organism|Lumen|Lisinopril|Fraction of oral drug mass absorbed into mucosa"
+        "Organism|PeripheralVenousBlood|Lisinopril|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -1303,18 +1297,6 @@
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Lisinopril-Lumen-Fraction of oral drug mass absorbed into mucosa",
-              "X": "Time",
-              "Y": "Beermann PO repeated 20mg|Organism|Lumen|Lisinopril|Fraction of oral drug mass absorbed into mucosa",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Visible": false,
-                "Color": "#008000",
-                "LegendIndex": 3,
-                "LineStyle": "Dash"
               }
             }
           ],

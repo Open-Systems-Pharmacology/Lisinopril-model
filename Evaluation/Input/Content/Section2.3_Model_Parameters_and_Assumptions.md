@@ -3,7 +3,7 @@
 The parameters values for `Intestinal permeability` and `Permeability P(intracellular->interstitial) Mucosa` were optimized based on clinical oral data, see [Section 2.3.4](#model-parameters-and-assumptions-identification). 
 The measured solubility of lisinopril was taken from Product information from Cayman Chemical Co (see [Section 2.2.1](#invitro-and-physico-chemical-data)).
 
-Tablet dissolution was modeled using an empirical Weibull dissolution approach, with the corresponding parameters estimated accordingly.
+Tablet dissolution was modeled using an empirical Weibull dissolution approach, with the corresponding parameters estimated (Dissolution time and shape).
 
 ### Distribution <a id="model-parameters-and-assumptions-distribution"></a>
 
@@ -15,7 +15,7 @@ After testing the available organ-plasma partition coefficient and cell permeabi
 
 ### Metabolism and Elimination <a id="model-parameters-and-assumptions-metabolism-and-elimination"></a>
 
-After absorption, lisinopril remains unbound to plasma proteins, does not undergo metabolism, and is not secreted into bile. The drug is primarily eliminated through renal plasma clearance, with `Plasma Clearance` estimated accordingly.
+After absorption, Lisinopril remains unbound to plasma proteins, does not undergo metabolism, and is not secreted into bile. The drug is primarily eliminated through renal plasma clearance, with `Plasma Clearance` estimated accordingly.
 
 ### Automated Parameter Identification <a id="model-parameters-and-assumptions-parameter-identification"></a>
 
@@ -24,7 +24,7 @@ This is the result of the final parameter identification.
 | Model Parameter      | Optimized Value | Unit |
 | -------------------- | --------------- | ---- |
 | `lipophilicity` |          -0.58       |   Log Units   |
-| `Plasma Clearance` |        1.18         |      |ml/min/kg
+| `Plasma Clearance (Renal clearance)` |        1.18         |      |ml/min/kg
 | `Intestinal permeability` |     1.35E-8            | cm/s     |
 | `Weibull Dissolution time` |        120         |  min    |
 | `Weibull Dissolution shape` |        3.00         |   -   |

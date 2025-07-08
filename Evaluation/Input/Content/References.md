@@ -15,3 +15,5 @@
 **PubChem 2024** PubChem Compound Summary of Lisinopril (2024). https://pubchem.ncbi.nlm.nih.gov/compound/Lisinopril
 
 **Cayman Chem 2022** Product information from Cayman Chemical Co (2022) https://www.caymanchem.com/product/16833/lisinopril
+
+**DrugBank 2025** Durgbank Compound Summary of Lisinopril (2025). https://go.drugbank.com/drugs/DB00722
